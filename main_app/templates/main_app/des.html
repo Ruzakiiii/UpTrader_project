@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/two.css' %}">
+    <title>{{ item.item_name }}</title>
+</head>
+<body>
+<div class="buttons">
+  <div class="container">
+      <h1>User name:</h1>
+      <a href="" class="btn effect01" ><span>{{item.user}}</span></a><br>
+      <h1>Description: {{item.item_des}}</h1>
+      <p>Item name: {{item.item_name}}</p>
+      <p>Category: {{item.item_cat}}</p>
+  </div>
+</div>
+
+
+</body>
+</html>

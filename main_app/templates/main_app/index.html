@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/one.css' %}">
+    <title>All_items</title>
+</head>
+<body>
+<div class="box">
+<div id="multi-derevo">
+
+ <h4><a>Ствол дерева</a></h4>
+ <ul>
+     {% for i in item %}
+  <span><em class="marker open"></em>{{ i.item_cat }}</span>
+   <ul>
+   <li><span><a href="{{ i.get_url }}" class="current" title="Выбранный раздел"><em class="marker open"></em>{{ i.item_name }}</a></span><br>
+    {% endfor %}
+       </ul>
+     </ul>
+</div><!-- /multi-derevo -->
+</div>
+</body>
+</html>
