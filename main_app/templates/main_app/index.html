@@ -8,6 +8,10 @@
 </head>
 <body>
 <div class="box">
+     Все категории:
+    {% for cat in categories %}
+    {{ cat.category_name }}
+    {% endfor %}
 <div id="multi-derevo">
 
  <h4><a>Ствол дерева</a></h4>
