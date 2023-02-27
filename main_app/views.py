@@ -10,7 +10,5 @@ def start(request):
 def one_item(request, id:int):
     items = All_items.objects.get(id=id)
 
-    categories = Categories.objects.all()
-
-    return render(request,'main_app/des.html', { 'item': items, 'categories': categories})
+    return render(request,'main_app/des.html', { 'item': items})
 
